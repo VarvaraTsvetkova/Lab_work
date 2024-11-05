@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style= "color:blueviolet"> Lesson 1 </h1>
+
+    <button id = "dom">Click to create magic (=^･ｪ･^=)</button>
+    <script>
+        let clicked = false;
+        const btn = document.getElementById("dom");
+        console.log(btn.innerText);
+        btn.addEventListener("click", function(){
+            if (!clicked)
+        {
+            document.body.style.background = "#86cecb";
+            clicked = true;
+        }
+        else
+        {
+            document.body.style.background = "#e12885";
+            clicked = false;
+        }
+        console.log(document.querrySelector("ul > li").innerText);
+    });
+    </script>
+</body>
+</html>
