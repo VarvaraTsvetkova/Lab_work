@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lab work 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mx-5 mt-5 d-flex justify-content-between">
+            <div class="col-xxl-3 col-md-4 border border-success">
+                <h4>Низкая цена <span class="badge bg-success" id="lowCount">0</span></h4>
+            </div>
+            <div class="col-xxl-3 col-md-4 border border-warning">
+                <h4>Средняя цена <span class="badge bg-warning" id="midCount">0</span></h4>
+            </div>
+            <div class="col-xxl-3 col-md-4 border border-danger">
+                <h4>Высокая цена <span class="badge bg-danger" id="highCount">0</span></h4>
+            </div>
+        </div>
+
+        <h1 class="text-center mt-5">Таблица товаров</h1>
+        <table id='product' class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Название</th>
+                    <th scope="col">Страна производства</th>
+                    <th scope="col">Цена</th>
+                    <th scope="col">Комплектация</th>
+                    <th scope="col">Состав</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>Пряжа для вязания ассорти №1 акриловая</td>
+                    <td>Россия</td>
+                    <td>600</td>
+                    <td>10 мотков по 40 г</td>
+                    <td>100% акрилл</td>
+                </tr>
+
+                <tr>
+                    <td>Пряжа для вязания ангора</td>
+                    <td>Белорусь</td>
+                    <td>200</td>
+                    <td>2 мотка по 50 г</td>
+                    <td>70% пух ангорского кролика, 30% нейлон</td>
+
+                </tr>
+
+                <tr>
+                    <td>Носочная пряжа Нако Boho Desen</td>
+                    <td>Турция</td>
+                    <td>100</td>
+                    <td>1 шт</td>
+                    <td>шерсть 75%; полиамид 25%</td>
+                </tr>
+
+                <tr>
+                    <td>Пряжа шерстяная Деревенька из Троицка</td>
+                    <td>Россия</td>
+                    <td>500</td>
+                    <td>5 шт</td>
+                    <td>шерсть - 100%</td>
+                </tr>
+                <tr>
+
+                    <td>Пряжа Everest 7049</td>
+                    <td>Турция</td>
+                    <td>79</td>
+                    <td>3 шт</td>
+                    <td>Шерсть 30%; Акрил 70%</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-success mt-3" id="categorizeButn">Категоризовать</button>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
